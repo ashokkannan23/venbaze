@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<page layout="3columns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+
+		<referenceBlock name="logo">
+            <arguments>
+                <argument name="logo_file" xsi:type="string">images/logo.svg</argument>
+                <argument name="logo_img_width" xsi:type="number">60</argument>
+                <argument name="logo_img_height" xsi:type="number">60</argument>
+            </arguments>
+        </referenceBlock>
+		<!--<move element="logo" destination="header.panel" before="header.links"/>
+		<move element="top.search" destination="header.panel" after="header.links" />
+		<move element="minicart" destination="header.panel" />-->
+		
+		<move element="header.panel" destination="header.panel.wrapper"/>
+		<move element="logo" destination="header.panel" before="-"/>
+		<!-- <move element="catalog.topnav" destination="header.panel" after="logo"/> -->
+		<move element="top.search" destination="header.panel" after="catalog.topnav"/>
+
+        <move element="header.links" destination="header.panel" before="top.search"/>
+        <move element="minicart" destination="header.panel" after="header.links"/>
+
+        <referenceBlock name="register-link" remove="true" />
+
+        <referenceBlock name="report.bugs" remove="true"/>
+        <move element="copyright" destination="before.body.end"/>
+		<referenceBlock name="catalog.compare.sidebar" remove="true"/> <!-- Remove sidebar -->
+	    <referenceBlock name="catalog.compare.link" remove="true"/> <!-- Remove link in header -->
+	    <referenceBlock name="related.product.addto.compare" remove="true"/> <!-- Related product -->
+	    <referenceBlock name="category.product.addto.compare" remove="true"/> <!-- Category add compare -->
+	    <referenceBlock name="view.addto.compare" remove="true" /> <!-- Product addto compare -->
+	    <referenceBlock name="upsell.product.addto.compare" remove="true"/>
+	    <referenceBlock name="catalogsearch.product.addto.compare" remove="true"/>
+	    <referenceBlock name="crosssell.product.addto.compare" remove="true" />
+
+		<!-- <referenceBlock name="page.main.title" remove="true"/> -->
+
+		
+		
+		
+		
+    </body>
+</page>

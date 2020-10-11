@@ -82,8 +82,8 @@
                 <height>500</height>
             </image>
             <image id="product_page_image_small" type="thumbnail">
-                <width>60</width>
-                <height>70</height>
+                <width>50</width>
+                <height>60</height>
             </image>
             <image id="product_swatch_image_large" type="image"/>
             <image id="product_swatch_image_medium" type="image">
@@ -228,7 +228,7 @@
             <var name="fullscreenzoom">10</var>  <!-- Zoom for fullscreen (integer)-->
             <var name="top"></var> <!-- Top position of magnifier -->
             <var name="left"></var> <!-- Left position of magnifier -->
-            <var name="width">800</var> <!-- Width of magnifier block -->
+            <var name="width">850</var> <!-- Width of magnifier block -->
             <var name="height">530</var> <!-- Height of magnifier block -->
             <var name="eventType">hover</var> <!-- Action that atcivates zoom (hover/click) -->
             <var name="enabled">true</var> <!-- Turn on/off magnifier (true/false) -->

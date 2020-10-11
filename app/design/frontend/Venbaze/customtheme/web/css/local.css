@@ -245,15 +245,23 @@ color: #000 !important;
 /* Product main page */
 
 .product.media {
-    width: 35% !important;
+    width: 60% !important;
 }
 
 .product-info-main {
-    width: 60% !important;
+    width: 35% !important;
 }
 .fotorama__thumb-border {
     border: 1.5px solid #000 !important;
 
+}
+
+.fotorama__stage__frame .fotorama__img{
+    max-width: 120% !important;
+}
+.magnify-lens {
+    background: rgb(158 158 158 / 18%) !important;
+    border: solid 0px #bbbbbb !important;
 }
 /* .magnify-lens .magnify-hidden{
     width: 100% !important;
